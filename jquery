@@ -1,0 +1,13 @@
+$("#bitbucket-commits").wrap( "<div class='span6'></div>" );
+$("#bitbucket-commits").removeClass('span6').addClass('span12')
+$("#polaris-widget-framework--merge--stp" ).wrap( "<div id='right_column' class='span6'></div>" );
+$("#polaris-widget-framework--merge--stp" ).wrap( "<div id='row_first' class='row'></div>" );
+$("#polaris-widget-framework--merge--stp" ).removeClass('span2').addClass('span6')
+$("#polaris-widget-framework--merge--ml" ).appendTo( "#row_first" );
+$("#polaris-widget-framework--merge--ml" ).removeClass('span2').addClass('span6')
+$("#jolokia-5xx-count-graph").wrap( "<div id='row_second' class='row'></div>" );
+$("#jolokia-4xx-count-graph" ).appendTo( "#row_second" );
+$("#jolokia-5xx-count-graph").removeClass('span1').addClass('span6')
+$("#jolokia-4xx-count-graph").removeClass('span1').addClass('span6')
+$("#row_second").appendTo("#right_column");
+$("#bitbucket-commits").height($('#right_column').height() - 40);

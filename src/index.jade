@@ -1,0 +1,180 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Moze Lyczka?
+
+    // build:css styles/styles.css
+    //- Check out 'src/bower_components/prism/themes/' for available themes
+    link(rel='stylesheet', type='text/css', href='bower_components/prism/themes/prism-tomorrow.css')
+    link(rel='stylesheet', type='text/css', href='styles/main.css')
+    // endbuild
+
+  body
+
+    article
+
+      section
+        img(src="https://raw.github.com/gulpjs/artwork/master/gulp.png",  style="height:200px;")
+        h1 Może Łyczka?
+
+      section
+          img(src="http://harmful.cat-v.org/software/_java/problem-factory.jpg",  style="height: 400px;")
+      
+      section
+          img(src="http://zowchow.com/files/2013/05/old-people.jpg",  style="height: 400px;")
+
+      section
+        p
+          ul
+            li
+              img(src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Maven_logo.svg/512px-Maven_logo.svg.png",  style="height: 100px;")
+            li
+              img(src="http://www.electric-cloud.com/blog/wp-content/uploads/2013/11/gradle.png",  style="height: 100px;")
+      section
+          img(src="http://cf.chucklesnetwork.com/items/1/4/6/8/3/original/are-you-kidding-me-are-you-kidding-me.jpg",  style="height: 400px;")
+
+      section
+          img(src="http://jasonpollock.tv/wp-content/uploads/2010/09/SkiUtah.jpg",  style="height: 400px;")
+
+      section
+          img(src="http://upload.wikimedia.org/wikipedia/commons/a/a7/Web_2.0_Map.svg",  style="height: 400px;")
+
+      section
+        p
+          img(src="http://theinspirationroom.com/daily/musicvideos/2013/8/lady_gaga_applause_1.jpg", style="height:400px")
+      section
+        p
+          img(src="http://6269-9001.zippykid.netdna-cdn.com/wp-content/uploads/2013/08/My-Little-Pony-Background-Wallpaper-.png", style="height:400px")
+      section
+        p
+          ul
+            li 
+              img(src="http://nodeblog.files.wordpress.com/2011/07/nodejs.png", style="height:80px;")
+            li 
+              img(src="http://yeoman.io/assets/img/yeoman-horizontal.b2ee.gif", style="height:80px;")
+            li 
+              img(src="http://bower.io/img/bower-logo.png", style="height:100px;")
+            li 
+              img(src="http://i.imgur.com/nyX9TKX.png", style="height:100px")
+
+      section
+        p
+          img(src="http://i.imgur.com/rWeEIWA.jpg", style="height:400px")
+
+      section
+        p        
+          img(src="http://takipi.wpengine.netdna-cdn.com/wp-content/uploads/2013/11/Javascript.jpg", style="height:200px")
+
+      section
+        img(src='https://31.media.tumblr.com/b462e20dcbd17f3b1d800bab20dc8d8c/tumblr_inline_mzi7208bai1r7sehg.gif',style="height:400px")      
+      
+      section
+        img(src='http://i.imgur.com/ueCVpVU.png',style="height:200px;")      
+      section
+        img(src='http://i.imgur.com/W4EyHcs.jpg', style="height:400px;")      
+
+      section
+        img(src="http://i.imgur.com/NJXyZe5.jpg", style="height:400px")
+
+      section
+          h2 Plusy
+
+      section
+          h3 Kod ponad konfiguracją
+          pre
+            code(style="font-size:12px;line-height: 8px").language-javascript.
+              var gulp = require('gulp')       
+              gulp.task('default',  function() {
+                  gulp.run('sass');
+                  gulp.src('_scss/ *.scss').pipe(gulp.dest('css/'));
+                  gulp.watch(['_scss/**/ *.scss'], function(event) {
+                      gulp.run('sass');
+                  });
+              });
+    
+      section
+          h3 Przyjemne w użyciu API
+          ul
+            li gulp.task(name, fn)
+            li gulp.run(tasks...)
+            li gulp.watch(glob, fn)
+            li gulp.src(glob)
+            li gulp.dest(folder)
+
+      section
+          h3 Wygodne zależności i asynchroniczna praca
+          img(src="http://cureinternational.github.io/futurestack2013/images/async.jpg")
+      
+      section
+          h3 Filozofia Unixa...
+          ul
+            li
+              img(src="https://evbdn.eventbrite.com/s3-s3/eventlogos/1576071/doonethingwell.gif", style="height:200px")
+
+      section
+          h3 ...użycie strumieni
+            pre
+              code.language-javascript.
+                gulp.src('_scss/ *.scss')
+                .pipe(plumber())
+                .pipe(gulp.dest('css/'));
+   
+        section
+            h3 Mniej I/O - szybszy przy operacjach na plikach!
+              ul
+                li
+                li 
+                  img(src="http://i.imgur.com/RrJs0eM.png", style="height:100px")
+                li
+                  img(src="http://i.imgur.com/ELYAhLE.png", style="height:100px")
+
+        section
+            h2.bullet Minusy
+        section
+              ul
+                li Mniej pluginów (371 vs 2451 dla Grunta)... 
+                li zwłaszcza dla bardziej nietypowych, mało popularnych rozwiązań
+        section
+              ul
+                li Taski typu map (czasem też reduce)
+        section
+          h2.bullet Wnioski
+        section
+          img(src="http://i.imgur.com/7x29bfb.jpg", style="float:left; height:350px")
+          p
+            ul
+              li
+              li Grunt jest dobry do CI
+              li Do codziennych zajęć warto rozpatrzyć Gulpa
+        section
+          p
+              img(src="http://i.imgur.com/GET9e8S.png", style="height:130px")
+        section        
+          p
+              img(src="http://www.mrwallpaper.com/wallpapers/happy-seal.jpg", style="height:400px")
+        section        
+          h1 Pytania?
+        section(data-bespoke-hash='named-route')
+            ul
+              li
+                h2 Artur Skowroński
+              li
+                a(href='http://hibari.eu')  hibari.eu
+              li
+                a(href='http://twitter.com/artur.skowronski')  @artur.skowronski
+
+      // build:js scripts/scripts.js
+    script(src='bower_components/bespoke.js/dist/bespoke.min.js')
+    script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
+    script(src='bower_components/bespoke-touch/dist/bespoke-touch.min.js')
+    script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
+    script(src='bower_components/bespoke-scale/dist/bespoke-scale.min.js')
+    script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
+    script(src='bower_components/bespoke-progress/dist/bespoke-progress.min.js')
+    script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
+    script(src='bower_components/bespoke-forms/dist/bespoke-forms.min.js')
+    script(src='bower_components/prism/prism.js')
+    script(src='scripts/main.js')
+    // endbuild
